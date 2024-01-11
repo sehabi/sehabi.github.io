@@ -1,0 +1,231 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+  /* font-family: 'Work Sans', sans-serif; */
+  font-family: 'SUIT', sans-serif;
+	vertical-align: baseline;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  text-decoration: none;
+  color: #000000;
+  word-break: keep-all;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* font-family: 'Racing Sans One', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+/* font-family: 'Work Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'SUIT', sans-serif; */
+
+/* S T A R T */
+.container {
+  background-color: #191919;
+}
+.header {
+  width: 100vw;
+  height: 80px;
+  padding: 15px 20px;
+  border-bottom: 1px solid #666666;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(19, 19, 19, 0.8);
+}
+.gotoresume {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 80px;
+  display: inline-block;
+}
+.gotoresume span {
+  display: inline-block;
+  color: #ffffff;
+  position: relative;
+  top: -50px;
+  right: 0px;
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+}
+.gotoresume img {
+  position: relative;
+  right: 80px;
+}
+.main {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1700px;
+  overflow: hidden;
+}
+.txt {
+  width: 50vw;
+  padding: 100px 100px 0 100px;
+}
+.t_category {
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: #FFFFFF;
+}
+.t_title {
+  font-size: 55px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+.t_concept {
+  font-size: 20px;
+  margin-bottom: 60px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+.t_about {
+  font-size: 20px;
+  line-height: 25px;
+}
+td {
+  min-width: 120px;
+  color: #FFFFFF;
+}
+.th {
+  font-weight: 700;
+}
+.tn {
+  width: 50vw;
+  height: 500px;
+  overflow: hidden;
+  background-color: rgba(50, 50, 50, 0.2);
+  /* background: rgb(142,45,226);
+  background: linear-gradient(0deg, rgba(142,45,226,1) 0%, rgba(74,0,224,1) 100%); */
+}
+
+.tn img {
+  width: 50%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btnbox {
+  /* background-color: aqua; */
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+.btnbox button {
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  border-radius: 50px;
+  margin: 0 5px;
+  color: #FFFFFF;
+  font-family: 'SUIT', sans-serif;
+  cursor: pointer;
+}
+.btnbox button:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+.btnbox button.active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.btnbox button.active:hover {
+  color: #FFFFFF;
+}
+
+.inside {
+  margin: 0 auto;
+  max-width: 1700px;
+  width: 100%;
+  overflow: hidden;
+}
+.pf, .s1, .s2, .s3, .s4 {
+  width: 80vw;
+  margin: 100px auto;
+}
+.pf img, .s1 img, .s2 img, .s3 img, .s4 img {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.s1, .s2, .s3, .s4 {
+  display: none;
+}
+
+.clicked {
+  display: block;
+}
+
+@media (max-width:1024px) {
+  .txt {
+    width: 100%;
+    padding: 60px;
+    padding-bottom: 0;
+  }
+  .t_title {
+    font-size: 50px;
+  }
+  .t_concept {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .tn {
+    display: none;
+  }
+  .pf, .s1, .s2, .s3, .s4 {
+    margin: 50px auto;
+  }
+}
