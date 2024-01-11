@@ -144,7 +144,7 @@ html {
   font-weight: 900;
   color: rgba(0, 0, 0, 0.05);
   z-index: -1;
-  /* animation: turn 5s linear infinite; */
+  animation: turn 5s linear infinite;
 }
 .update {
   position: absolute;
@@ -153,7 +153,7 @@ html {
   color: #edae03;
 }
 
-/* @keyframes turn {
+@keyframes turn {
   0% {
     transform: rotate3d(0, 0, 0, 00deg);
   }
@@ -166,7 +166,7 @@ html {
   100% {
     transform: rotate3d(0, 0, 0, 00deg);
   }
-} */
+}
 
 #project {
   background-color: #FFFFFF;
