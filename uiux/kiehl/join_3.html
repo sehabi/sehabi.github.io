@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEHA_키엘 공식 올라인 몰 : JOIN 3</title>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/90dec0b131.js" crossorigin="anonymous"></script>
+  <!-- xeicon -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style_join.css">
+  <link rel="sheet" href="responsive.css">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="custom.js"></script>
+  
+</head>
+
+<body>
+
+  <div class="header">
+    
+    <div class="top-banner-outer">
+      <div class="top-banner">
+        <div class="tb1" for="pos1">키엘 공식 온라인 몰 단독! 신규 가입 후 첫구매 시 전 품목 15% OFF</div>
+        <div class="tb2" for="pos2">키엘 이메일 뉴스레터를 신청하시면, 가장 빠른 신제품 출시 소식과 다양한 이벤트 소식을 받아보실 수 있습니다.</div>
+        <div class="tb3" for="pos3">첫 구매 시, 전 품목 15% 할인! FIRST15 코드를 입력하세요. *마케팅 수신 동의 필수!*</div>
+        <span class="close-banner" onclick="$('.top-banner-outer').slideUp(400);"><i class="xi-close-thin"></i></span>
+      </div>
+    </div>
+
+    <div class="header-inner">
+      <div class="h-left">
+        <div class="h-l-top">
+          <a href="#" class="newsletter">뉴스레터 신청하기</a>
+          <a href="#" class="findmise">매장 찾기</a>
+        </div>
+      </div>
+      <div class="h-center">
+        <div class="logo"><a href="main.html"><img src="images/logo/logo_black.png"></a></div>
+      </div>
+      <div class="h-right">
+        <div class="h-r-top">
+          <a href="#" class="login">로그인</a>
+          <a href="#" class="shopping">장바구니</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search-text" placeholder="찾으시는 제품 있으세요?">
+          <button class="s-btn"><i class="xi-search"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <div class="main-menu">
+        <nav class="navbar">
+          <ul class="nav">
+            <li class="tab1"><a href="#">NEW</a>
+              <ul id="tab1" class="tab">
+                <li>신제품</li>
+                <li>키엘 홀리데이 2021</li>
+                <li>키엘 수퍼 크림</li>
+                <li>파워플 비타민 C 에센스</li>
+                <li>울트라 훼이셜 크림</li>
+                <li>NEW 페룰릭 브루 에센스</li>
+                <li>칼렌듈라 꽃잎 토너</li>
+                <li>키엘 투명 에센스</li>
+              </ul>
+            </li>
+            <li data-alt="tab2"><a href="#">베스트셀러</a>
+              <ul id="tab2" class="tab">
+                <li>베스트 셀러</li>
+                <li>베스트 셀러 점보 사이즈</li>
+              </ul>
+            </li>
+            <li data-alt="tab3"><a href="#">스킨케어</a>
+              <ul id="tab3" class="tab">
+                <li>클렌저 & 스크럽</li>
+                <li>토너</li>
+                <li>모이스처라이저</li>
+                <li>에센스</li>
+                <li>크림</li>
+                <li>아이 & 립 케어</li>
+                <li>마스크</li>
+                <li>자외선 차단제</li>
+                <hr>
+                <li>피부고민별 제품 찾기</li>
+                <li>컬렉션별 제품 찾기</li>
+              </ul>
+            </li>
+            <li data-alt="tab4"><a href="#">맨케어</a>
+              <ul id="tab4" class="tab">
+                <li>맨 베스트 셀러</li>
+                <li>클렌저 & 쉐이빙</li>
+                <li>토너</li>
+                <li>모이스처라이저</li>
+                <li>아이 & 립 케어</li>
+                <li>안티에이징</li>
+                <li>바디 & 핸드 스페셜 케어</li>
+                <li>자외선 차단제</li>
+                <hr>
+                <li>피부고민별 제품 찾기</li>
+                <li>컬렉션별 제품 찾기</li>
+              </ul>
+            </li>
+            <li data-alt="tab5"><a href="#">바디&헤어</a>
+              <ul id="tab5" class="tab">
+                <li>헤어 샴푸</li>
+                <li>헤어 컨디셔너</li>
+                <li>헤어 트린트먼트</li>
+                <li>헤어 스타일링</li>
+                <li>바디 클렌저 & 스크럽</li>
+                <li>바디 모이스처라이저</li>
+                <li>핸드 & 바디 스페셜 케어</li>
+                <li>맘 & 베이비</li>
+                <li>향수</li>
+              </ul>
+            </li>
+            <li data-alt="tab6"><a href="#">반려동물</a>
+              <ul id="tab6" class="tab">
+                <li>반려동물 용품</li>
+              </ul>
+            </li>
+            <li data-alt="tab7"><a href="#">이벤트</a>
+              <ul id="tab7" class="tab">
+                <li>이달의 구매 혜택</li>
+                <li>공식몰 단독 혜택</li>
+                <hr>
+                <li>FUTURE MADE BETTER</li>
+                <li>키엘 공병 캠페인</li>
+                <li>2021 마일리지 프로그램</li>
+                <li>울트라 훼이셜 크림 미니 프로모션</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+
+  <section>
+    <div class="join-container">
+      <h1>키엘 공식 올라인 몰 회원만을 위한 다양한 혜택이 여러분을 기다립니다!</h1>
+      <div class="stage">
+        <span>본인확인</span><i class="xi-angle-right"></i>
+        <span>약관동의</span><i class="xi-angle-right"></i>
+        <span style="color: #fff;">회원가입</span>
+      </div>
+      <div class="join-enter">
+        <h2>회원정보를 입력해주세요.</h2>
+        <div class="enterbox">
+          <div class="fillbox">
+            <div class="personal">
+              <div class="name">
+                <label for="name">이름</label>
+                <input type="text" id="name">
+              </div>
+              <div class="gender">
+                <label for="gender">성별</label>
+                <select id="gender">
+                  <option>여성</option>
+                  <option>남성</option>
+                </select>
+              </div>
+              <div class="birth">
+                <label for="birth">생년월일</label>
+                <input type="date" id="birth">
+              </div>
+              <div class="phone">
+                <label for="phone">전화번호</label>
+                <div id="phone">
+                  <input type="number" class="pn1">
+                  <strong>-</strong>
+                  <input type="number" class="pn2">
+                  <strong>-</strong>
+                  <input type="number" class="pn3">
+                </div>
+              </div>
+            </div>
+            <div class="email-password">
+              <div class="email">
+                <label for="email">이메일</label>
+                <input type="email" id="email">
+              </div>
+              <div class="email-confirm">
+                <label for="email-confirm">이메일 확인</label>
+                <input type="email" id="email-confirm">
+              </div>
+              <div class="password">
+                <label for="password">비밀번호</label>
+                <input type="password" id="password">
+              </div>
+              <div class="password-confirm">
+                <label for="password-confirm">비밀번호 확인</label>
+                <input type="password" id="password-confirm">
+              </div>
+            </div>
+          </div>
+          <div class="agreebox">
+            <img src="images/logo/kiehls-rewards.png" class="stamp">
+            <div class="info-onoff">
+              <p>
+                <strong>키엘 오프라인 매장에서 고객 등록을 하신 적이 있으세요?</strong><br>
+                동일한 이름, 휴대전화번호, 생년월일로 온라인 회원가입 하시고,<br>
+                온/오프 통합 마일리지 혜택을 받으세요.
+              </p>
+            </div>
+            <div class="agrees">
+              <h4>EDM 뉴스레터 수신동의</h4>
+              <div class="emd-ag">
+                <input type="checkbox" id="checkbox1" class="ag-check">
+                <label for="checkbox1"><span>키엘에서 제공하는 다양한 혜택과 신제품 소식을<br>이메일로 수신하겠습니다.</span></label>
+              </div>
+              <h4>SMS 수신동의</h4>
+              <div class="sms-ag">
+                <input type="checkbox" id="checkbox2" class="ag-check">
+                <label for="checkbox2"><span>개인정보에 등록된 핸드폰 번호로<br>키엘 SMS를 수신하겠습니다.</span></label>
+              </div>
+              <br>
+              <div class="all-ag">
+                <input type="checkbox" id="checkbox3" class="agall-check">
+                <label for="checkbox3"><span>전체동의</span></label>
+                <div><a href="#">키엘 공식 온라인 몰 이용 약관 및 개인정보처리방침 자세히보기</a></div>
+              </div>
+              <button type="button"><a href="main.html">가입하기</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+
+    <div class="brand">
+      <img class="logo-white" src="images/logo/logo_white.png">
+      <span>FINEST APOTHECARY SKINCARE</span>
+      <img class="statement" src="images/logo/statement-icon.png">
+      <span>자연성분 • 피부과학 • 맞춤서비스</span>
+    </div>
+
+    <div class="btm-menu">
+      <div class="btm-menu1">
+        <div class="btm-1">
+          <img class="btm-1-img" src="images/btm-menu/btm-1.png">
+        </div>
+        <div class="btm-1-text">스킨 케어</div>
+      </div>
+      <div class="btm-menu2">
+        <div class="btm-2">
+          <img class="btm-2-img" src="images/btm-menu/btm-2.png">
+        </div>
+        <div class="btm-2-text">맨 케어</div>
+      </div>
+      <div class="btm-menu3">
+        <div class="btm-3">
+          <img class="btm-3-img" src="images/btm-menu/btm-3.png">
+        </div>
+        <div class="btm-3-text">헤어 케어</div>
+      </div>
+      <div class="btm-menu4">
+        <div class="btm-4">
+          <img class="btm-4-img" src="images/btm-menu/btm-4.png">
+        </div>
+        <div class="btm-4-text">바디&베이비</div>
+      </div>
+    </div>
+
+    <div class="footer-under">
+      <div class="ft-inner">
+        <div class="ft-left">
+          <div class="policy">
+            <span>ⓒ2021 KIEHL'S SINCE 1851.</span>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">이용약관</a>
+            <a href="#">쿠키정책</a>
+            <a href="#">고객케어센터</a>
+            <a href="#">글로벌 사이트</a>
+          </div>
+          <div class="info">
+            <img class="logo-o" src="images/logo/footer_badge.png">
+            <span>사업자명:엘오케이(유) │ 대표:크리스티앙 마르코스 아르나이</span><br>
+            <span>사업자 등록번호:220-81-73483 │ 통신판매업 신고:2012-서울강남-01663</span>
+            <a href="#">사업자 정보 확인</a><br>
+            <span>주소:서울특별시 강남구 영동대로 517 아셈타워 31층</span><br>
+            <span>개인정보 보호 책임자:이정민 │ 고객 케어 센터:구매,배송,사이트 이용 문의 080-822-3322</span>
+            <span>제품 문의:080-022-3322</span>
+          </div>
+        </div>
+        <div class="ft-right">
+          <div class="sns">
+            <div class="facebook">
+              <a href="#"><i class="xi-facebook-official"></i></a>
+              <h5>페이스북</h5>
+            </div>
+            <div class="insta">
+              <a href="#"><i class="xi-instagram"></i></a>
+              <h5>인스타그램</h5>
+            </div>
+          </div>
+          <div class="lottelecs_info">
+            <p>
+              퍼스트데이터코리아(유) 구매안전(에스크로)서비스가맹점<br>
+              고객님은 안전한 전자상거래를 위해 저희 쇼핑몰에서 가입한<br>
+              퍼스트데이터코리아(유)의 구매안전 서비스를 이용할 수 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+</body>
+
+</html>

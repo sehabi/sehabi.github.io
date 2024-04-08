@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+  /**********CSS start**********/
+  /**********header**********/
+  .h-center {
+    width: 100%;
+  }
+  .logo img {
+    width: 100%;
+  }
+  /**********main-menu**********/
+  /**********section**********/
+  .container {
+    width: 100%; 
+  }
+  /**********section - banner**********/
+  /**********section - new**********/
+  /**********section - best seller**********/
+  .bs-items {
+    width: 100%;
+  }
+  /**********footer - brand**********/
+  
+}

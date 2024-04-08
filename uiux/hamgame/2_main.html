@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Silkscreen:wght@400;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+</head>
+<body>
+  
+  <div id="container">
+    <div id="main_banner"></div>
+    <div id="home_menu">
+      <div id="home_category">
+        <div class="bold_txt home_title">카테고리</div>
+        <div id="home_category_box" class="home_box">
+          <div id="home_category_item1" class="home_category_item">
+            <div class="home_category_img"></div>
+            <div class="home_category_txt">RPG</div>
+          </div>
+          <div id="home_category_item2" class="home_category_item">
+            <div class="home_category_img"></div>
+            <div class="home_category_txt">액션</div>
+          </div>
+          <div id="home_category_item3" class="home_category_item">
+            <div class="home_category_img"></div>
+            <div class="home_category_txt">전략</div>
+          </div>
+          <div id="home_category_item4" class="home_category_item">
+            <div class="home_category_img"></div>
+            <div class="home_category_txt">시뮬레이션</div>
+          </div>
+          <div id="home_category_item5" class="home_category_item">
+            <div class="home_category_img"></div>
+            <div class="home_category_txt">어드벤처</div>
+          </div>
+          <div id="home_category_item6" class="home_category_item">
+            <div class="home_category_img"></div>
+            <div class="home_category_txt">스포츠</div>
+          </div>
+          <div id="home_category_item7" class="home_category_item">
+            <div class="home_category_img"></div>
+            <div class="home_category_txt">모바일</div>
+          </div>
+          <div id="home_category_item8" class="home_category_item">
+            <div class="home_category_img"></div>
+            <div class="home_category_txt">전체</div>
+          </div>
+        </div>
+      </div>
+      <div id="home_mygame_box">
+        <div class="bold_txt home_title">내 게임</div>
+        <div id="my_game_wrap">
+          <div id="my_game_list">
+            <div id="mg1" class="my_game"></div>
+            <div id="mg2" class="my_game"></div>
+            <div id="mg3" class="my_game"></div>
+            <div id="mg4" class="my_game"></div>
+            <div id="mg5" class="my_game"></div>
+            <div id="mg6" class="my_game"></div>
+            <div id="mg7" class="my_game"></div>
+            <div id="mg8" class="my_game"></div>
+          </div>
+        </div>
+      </div>
+      <div id="home_news_box">
+        <div class="bold_txt home_title">게임 소식</div>
+        <div id="news_container">
+          <div class="news_box home_box">
+            <div class="news_header">
+              <div class="profile_img"></div>
+              <div class="profile_txt">
+                <div class="writer_name">크레이지 아케이드</div>
+                <div class="write_time s_txt gray">2024.03.26 오후 5:02</div>
+              </div>
+              <div class="comment s_txt">
+                <i class="bi bi-chat-right-dots"></i>
+                댓글 0개
+              </div>
+            </div>
+            <div class="news_body">
+              <p>[공지] 2월 넥슨플레이 바코드캐시충전 이벤트</p>
+              <p class="gray s_txt">안녕하세요, 넥슨 고객 여러분.<br/>2월 넥슨플레이 바코드캐시충전 이벤트에 대해 안내 드립니다.<br/><br/>* 2월 넥슨플레이 바코드 캐시충전 이벤트 *<br/>- 기본 5% 보너스 충전 (계정 기준 최대 50만 캐시까지 추가 충전)<br/>- 기본 5% 보너스 충전 (계정 기준 최대 50만 캐시까지 추가 충전)</p>
+              <div class="news_img"></div>
+            </div>
+          </div>
+          <div class="news_box home_box">
+            <div class="news_header">
+              <div class="profile_img"></div>
+              <div class="profile_txt">
+                <div class="writer_name">크레이지 아케이드</div>
+                <div class="write_time s_txt gray">2024.03.26 오후 5:02</div>
+              </div>
+              <div class="comment s_txt">
+                <i class="bi bi-chat-right-dots"></i>
+                댓글 0개
+              </div>
+            </div>
+            <div class="news_body">
+              <p>[공지] 2월 넥슨플레이 바코드캐시충전 이벤트</p>
+              <p class="gray s_txt">안녕하세요, 넥슨 고객 여러분.<br/>2월 넥슨플레이 바코드캐시충전 이벤트에 대해 안내 드립니다.<br/><br/>* 2월 넥슨플레이 바코드 캐시충전 이벤트 *<br/>- 기본 5% 보너스 충전 (계정 기준 최대 50만 캐시까지 추가 충전)<br/>- 기본 5% 보너스 충전 (계정 기준 최대 50만 캐시까지 추가 충전)</p>
+              <div class="news_img"></div>
+            </div>
+          </div>
+          <div class="news_box home_box">
+            <div class="news_header">
+              <div class="profile_img"></div>
+              <div class="profile_txt">
+                <div class="writer_name">크레이지 아케이드</div>
+                <div class="write_time s_txt gray">2024.03.26 오후 5:02</div>
+              </div>
+              <div class="comment s_txt">
+                <i class="bi bi-chat-right-dots"></i>
+                댓글 0개
+              </div>
+            </div>
+            <div class="news_body">
+              <p>[공지] 2월 넥슨플레이 바코드캐시충전 이벤트</p>
+              <p class="gray s_txt">안녕하세요, 넥슨 고객 여러분.<br/>2월 넥슨플레이 바코드캐시충전 이벤트에 대해 안내 드립니다.<br/><br/>* 2월 넥슨플레이 바코드 캐시충전 이벤트 *<br/>- 기본 5% 보너스 충전 (계정 기준 최대 50만 캐시까지 추가 충전)<br/>- 기본 5% 보너스 충전 (계정 기준 최대 50만 캐시까지 추가 충전)</p>
+              <div class="news_img"></div>
+            </div>
+          </div>
+          <div class="news_box home_box">
+            <div class="news_header">
+              <div class="profile_img"></div>
+              <div class="profile_txt">
+                <div class="writer_name">크레이지 아케이드</div>
+                <div class="write_time s_txt gray">2024.03.26 오후 5:02</div>
+              </div>
+              <div class="comment s_txt">
+                <i class="bi bi-chat-right-dots"></i>
+                댓글 0개
+              </div>
+            </div>
+            <div class="news_body">
+              <p>[공지] 2월 넥슨플레이 바코드캐시충전 이벤트</p>
+              <p class="gray s_txt">안녕하세요, 넥슨 고객 여러분.<br/>2월 넥슨플레이 바코드캐시충전 이벤트에 대해 안내 드립니다.<br/><br/>* 2월 넥슨플레이 바코드 캐시충전 이벤트 *<br/>- 기본 5% 보너스 충전 (계정 기준 최대 50만 캐시까지 추가 충전)<br/>- 기본 5% 보너스 충전 (계정 기준 최대 50만 캐시까지 추가 충전)</p>
+              <div class="news_img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="footer_nav">
+        <div id="home">
+          <img id="home_btn" class="footer_nav_btn active" src="./img/home.svg" alt="home_btn">
+        </div>
+        <div id="friends">
+          <img id="friends" class="footer_nav_btn" src="./img/friends.svg" alt="friends_btn">
+        </div>
+        <div id="chat">
+          <img id="chat_btn" class="footer_nav_btn" src="./img/chat.svg" alt="chat_btn">
+        </div>
+        <div id="set">
+          <img id="set_btn" class="footer_nav_btn" src="./img/set.svg" alt="set_btn">
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

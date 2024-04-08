@@ -1,0 +1,159 @@
+/* GOOGLE Web Font (font-family: 'Noto Sans KR', sans-serif;) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* GOOGLE Web Font (font-family: 'Dongle', sans-serif;) */
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+/* GOOGLE Web Font (font-family: 'Karla', sans-serif;) */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+
+/* CSS START */
+.modal-outer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  animation: ease-in-out 0.2s;
+  display: none;
+}
+
+/* modal */
+.modal-inner {
+  position: relative;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+.modal {
+  background-color: #fff;
+  width: 500px;
+  height: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close-modal {
+  font-size: 2em;
+  position: absolute;
+  top: 5px;
+  right: 8px;
+}
+
+.modal .logo {
+  text-align: center;
+  margin-top: 0px;
+}
+.modal .logo img {
+  width: 300px;
+}
+
+/* form */
+.modal form {
+  margin: 50px 80px;
+}
+.modal .email,
+.modal .password {
+  border-bottom: 2px solid #000;
+  height: 50px;
+}
+.modal .email span,
+.modal .password span {
+  font-size: 18px;
+  line-height: 50px;
+}
+.modal .email input {
+  height: 30px;
+  margin-left: 38px;
+  border: none;
+}
+.modal .password input {
+  height: 30px;
+  margin-left: 20px;
+  border: none;
+}
+.modal .password {
+  margin-top: 10px;
+}
+.modal .email input:focus, .password input:focus {
+  outline: none;
+}
+/* checkbox */
+.modal .rememder-email {
+  display: inline-block;
+}
+.modal .rememder-email span {
+  font-size: 12px;
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  top: -2.5px; left: 20px;
+}
+#checkbox + label {
+  display: inline-block;
+  width: 15px; height: 15px;
+  border: 1px solid #aaa;
+  position: relative;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#checkbox:checked + label {
+  background-color: #000;
+  border: 1px solid #000;
+}
+#checkbox:checked + label::after {
+  content: '\e929';
+  font-family: xeicon;
+  font-size: 18px;
+  color: #fff;
+  width: 16px; height: 16px;
+  position: absolute;
+  top: -1.5px; left: -1.5px;
+}
+#checkbox {
+  display: none;
+}
+
+.modal .find {
+  display: inline-block;
+  float: right;
+  margin-top: 8px;
+  font-size: 12px;
+}
+.modal .find a {
+  text-decoration: none;
+  color: #999;
+}
+.modal .find:after {
+  content: '\e93e';
+  font-family: xeicon;
+  color: #999;
+}
+/* btn */
+.modal button {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px 60px;
+  font-size: 20px;
+  font-weight: 800;
+  border: none;
+  background-color: black;
+  color: #fff;
+  margin-top: 50px;
+}
+
+/* go join */
+.modal .go-join {
+  text-align: center;
+  margin-top: 40px;
+}
+.modal .go-join a {
+  color: #999;
+  text-decoration: none;
+  border-bottom: 1px solid #999;
+}

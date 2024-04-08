@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEHA_키엘 공식 올라인 몰 : MAIN</title>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/90dec0b131.js" crossorigin="anonymous"></script>
+  <!-- xeicon -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="modal.css">
+  <link rel="sheet" href="responsive.css">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript" src="custom.js"></script>
+  <!-- Slick Slider -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="header">
+
+    <div class="top-banner-outer">
+      <div class="top-banner">
+        <div class="tb1" for="pos1">키엘 공식 온라인 몰 단독! 신규 가입 후 첫구매 시 전 품목 15% OFF</div>
+        <div class="tb2" for="pos2">키엘 이메일 뉴스레터를 신청하시면, 가장 빠른 신제품 출시 소식과 다양한 이벤트 소식을 받아보실 수 있습니다.</div>
+        <div class="tb3" for="pos3">첫 구매 시, 전 품목 15% 할인! FIRST15 코드를 입력하세요. *마케팅 수신 동의 필수!*</div>
+        <span class="close-banner" onclick="$('.top-banner-outer').slideUp(400);"><i class="xi-close-thin"></i></span>
+      </div>
+    </div>
+
+    <div class="header-inner">
+      <div class="h-left">
+        <div class="h-l-top">
+          <a href="#" class="newsletter">뉴스레터 신청하기</a>
+          <a href="#" class="findmise">매장 찾기</a>
+        </div>
+      </div>
+      <div class="h-center">
+        <div class="logo"><a href="main.html"><img src="images/logo/logo_black.png"></a></div>
+      </div>
+      <div class="h-right">
+        <div class="h-r-top">
+          <a href="#" class="login">로그인</a>
+          <a href="#" class="shopping">장바구니</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search-text" placeholder="찾으시는 제품 있으세요?">
+          <button class="s-btn"><i class="xi-search"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <div class="main-menu">
+        <nav class="navbar">
+          <ul class="nav">
+            <li class="tab1"><a href="#">NEW</a>
+              <ul id="tab1" class="tab">
+                <li>신제품</li>
+                <li>키엘 홀리데이 2021</li>
+                <li>키엘 수퍼 크림</li>
+                <li>파워플 비타민 C 에센스</li>
+                <li>울트라 훼이셜 크림</li>
+                <li>NEW 페룰릭 브루 에센스</li>
+                <li>칼렌듈라 꽃잎 토너</li>
+                <li>키엘 투명 에센스</li>
+              </ul>
+            </li>
+            <li data-alt="tab2"><a href="#">베스트셀러</a>
+              <ul id="tab2" class="tab">
+                <li>베스트 셀러</li>
+                <li>베스트 셀러 점보 사이즈</li>
+              </ul>
+            </li>
+            <li data-alt="tab3"><a href="#">스킨케어</a>
+              <ul id="tab3" class="tab">
+                <li>클렌저 & 스크럽</li>
+                <li>토너</li>
+                <li>모이스처라이저</li>
+                <li>에센스</li>
+                <li>크림</li>
+                <li>아이 & 립 케어</li>
+                <li>마스크</li>
+                <li>자외선 차단제</li>
+                <hr>
+                <li>피부고민별 제품 찾기</li>
+                <li>컬렉션별 제품 찾기</li>
+              </ul>
+            </li>
+            <li data-alt="tab4"><a href="#">맨케어</a>
+              <ul id="tab4" class="tab">
+                <li>맨 베스트 셀러</li>
+                <li>클렌저 & 쉐이빙</li>
+                <li>토너</li>
+                <li>모이스처라이저</li>
+                <li>아이 & 립 케어</li>
+                <li>안티에이징</li>
+                <li>바디 & 핸드 스페셜 케어</li>
+                <li>자외선 차단제</li>
+                <hr>
+                <li>피부고민별 제품 찾기</li>
+                <li>컬렉션별 제품 찾기</li>
+              </ul>
+            </li>
+            <li data-alt="tab5"><a href="#">바디&헤어</a>
+              <ul id="tab5" class="tab">
+                <li>헤어 샴푸</li>
+                <li>헤어 컨디셔너</li>
+                <li>헤어 트린트먼트</li>
+                <li>헤어 스타일링</li>
+                <li>바디 클렌저 & 스크럽</li>
+                <li>바디 모이스처라이저</li>
+                <li>핸드 & 바디 스페셜 케어</li>
+                <li>맘 & 베이비</li>
+                <li>향수</li>
+              </ul>
+            </li>
+            <li data-alt="tab6"><a href="#">반려동물</a>
+              <ul id="tab6" class="tab">
+                <li>반려동물 용품</li>
+              </ul>
+            </li>
+            <li data-alt="tab7"><a href="#">이벤트</a>
+              <ul id="tab7" class="tab">
+                <li>이달의 구매 혜택</li>
+                <li>공식몰 단독 혜택</li>
+                <hr>
+                <li>FUTURE MADE BETTER</li>
+                <li>키엘 공병 캠페인</li>
+                <li>2021 마일리지 프로그램</li>
+                <li>울트라 훼이셜 크림 미니 프로모션</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="modal" class="modal-outer">
+    <div class="modal">
+      <span class="close-modal"><i class="xi-close"></i></span>
+      <div class="modal-inner">
+        <div class="logo"><img src="images/logo/logo_black.png"></div>
+        <form>
+          <div class="email">
+            <span>이메일</span>
+            <input type="email" placeholder="이메일을 입력해주세요">
+          </div>
+          <div class="password">
+            <span>비밀번호</span>
+            <input type="password" placeholder="비밀번호를 입력해주세요">
+          </div>
+          <div class="rememder-email">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox"><span>이메일 저장하기</span></label>
+          </div>
+          <div class="find">
+            <a href="#">이메일/비밀번호 찾기</a>
+          </div>
+        </form>
+        <button type="button">로그인</button>
+        <div class="go-join">
+          <a href="join_1.html">키엘 공식 온라인 몰 회원이 아니신가요?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <section>
+
+    <div class="banner">
+      <div class="bn-inner">
+        <img src="images/banner/Holiday_1440x410_211020_PC.jpg">
+      </div>
+    </div>
+
+    <div class="container">
+
+
+      <div class="new">
+        <div class="new-title">
+          <hr>
+          <h3>NEW</h3>
+        </div>
+
+        <div class="new-items">
+
+          <div class="n-item-p1">
+            <div class="n-item n1">
+              <div class="n1-imgbox"><img class="n1-img" src="images/new/n1-50.jpg"></div>
+              <div class="text">
+                <p class="ko-name"><b>울트라 훼이셜 크림 홀리데이 에디션 2021</b></p>
+                <p class="en-name">2021 홀리데이 리미티드 에디션</p>
+              </div>
+              <div class="like">
+                <div class="heart-ratings">
+                  <div class="fill-ratings" style="width: 100%;">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                  <div class="empty-ratings">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-in">
+                <select class="ml-drop" id="n1">
+                  <option value="n1-op1" selected>50ml</option>
+                  <option value="n1-op2">175ml</option>
+                </select>
+                <div class="price">42,000원</div>
+              </div>
+            </div>
+            <div class="n-item n2">
+              <div class="n2-imgbox"><img class="n2-img" src="images/new/n2.jpg"></div>
+              <div class="text">
+                <p class="ko-name"><b>키엘 투명 에센스 홀리데이 에디션 2021</b></p>
+                <p class="en-name">2021 홀리데이 리미티드 에디션</p>
+              </div>
+              <div class="like">
+                <div class="heart-ratings">
+                  <div class="fill-ratings" style="width: 80%;">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                  <div class="empty-ratings">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-in">
+                <select class="ml-drop" id="n2">
+                  <option value="n2-op1">50ml</option>
+                </select>
+                <div class="price">110,000원</div>
+              </div>
+            </div>
+            <div class="n-item n3">
+              <div class="n3-imgbox"><img class="n3-img" src="images/new/n3-250.jpg"></div>
+              <div class="text">
+                <p class="ko-name"><b>칼렌듈라 꽃잎 토너 홀리데이 에디션 2021</b></p>
+                <p class="en-name">2021 홀리데이 리미티드 에디션</p>
+              </div>
+              <div class="like">
+                <div class="heart-ratings">
+                  <div class="fill-ratings" style="width: 50%;">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                  <div class="empty-ratings">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-in">
+                <select class="ml-drop" id="n3">
+                  <option value="n3-op1">250ml</option>
+                  <option value="n3-op2">500ml</option>
+                </select>
+                <div class="price">59,000원</div>
+              </div>
+            </div>
+            <div class="n-item n4">
+              <div class="n4-imgbox"><img class="n4-img" src="images/new/n4.jpg"></div>
+              <div class="text">
+                <p class="ko-name"><b>미드나잇 오일 에센스 50ml 홀리데이 에디션 2021</b></p>
+                <p class="en-name">2021 홀리데이 리미티드 에디션</p>
+              </div>
+              <div class="like">
+                <div class="heart-ratings">
+                  <div class="fill-ratings" style="width: 20%;">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                  <div class="empty-ratings">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-in">
+                <select class="ml-drop" id="n4">
+                  <option value="n4-op1">50ml</option>
+                </select>
+                <div class="price">95,000원</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="n-item-p2">
+            <div class="n-item n5">
+              <div class="n5-imgbox"><img class="n5-img" src="images/new/n5.jpg"></div>
+              <div class="text">
+                <p class="ko-name"><b>키엘 수퍼 크림 50ml 홀리데이 에디션</b></p>
+                <p class="en-name">2021 홀리데이 리미티드 에디션</p>
+              </div>
+              <div class="like">
+                <div class="heart-ratings">
+                  <div class="fill-ratings" style="width: 100%;">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                  <div class="empty-ratings">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-in">
+                <select class="ml-drop" id="n5">
+                  <option value="n5-op1">50ml</option>
+                </select>
+                <div class="price">87,000원</div>
+              </div>
+            </div>
+            <div class="n-item n6">
+              <div class="n6-imgbox"><img class="n6-img" src="images/new/n6-100.jpg"></div>
+              <div class="text">
+                <p class="ko-name"><b>페룰릭 브루 에센스</b></p>
+                <p class="en-name">Ferulic Brew Essence</p>
+              </div>
+              <div class="like">
+                <div class="heart-ratings">
+                  <div class="fill-ratings" style="width: 80%;">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                  <div class="empty-ratings">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-in">
+                <select class="ml-drop" id="n6">
+                  <option value="n6-op1">100ml</option>
+                  <option value="n6-op2">200ml</option>
+                </select>
+                <div class="price">86,000원</div>
+              </div>
+            </div>
+            <div class="n-item n7">
+              <div class="n7-imgbox"><img class="n7-img" src="images/new/n7-28.jpg"></div>
+              <div class="text">
+                <p class="ko-name"><b>칼렌듈라 꽃잎 마스크</b></p>
+                <p class="en-name">칼렌듈라 페탈 인퓨즈드 카밍 마스크<br>
+                  Calendula Petal Mask</p>
+              </div>
+              <div class="like">
+                <div class="heart-ratings">
+                  <div class="fill-ratings" style="width: 50%;">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                  <div class="empty-ratings">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-in">
+                <select class="ml-drop" id="n7">
+                  <option value="n7-op1">28ml</option>
+                  <option value="n7-op2">100ml</option>
+                </select>
+                <div class="price">10,000원</div>
+              </div>
+            </div>
+            <div class="n-item n8">
+              <div class="n8-imgbox"><img class="n8-img" src="images/new/n8-50.jpg"></div>
+              <div class="text">
+                <p class="ko-name"><b>울트라 훼이셜 오일-프리 젤 크림</b></p>
+                <p class="en-name">Ultra Facial Oil-Free Gel Cream Fresh Hydration</p>
+              </div>
+              <div class="like">
+                <div class="heart-ratings">
+                  <div class="fill-ratings" style="width: 20%;">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                  <div class="empty-ratings">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-in">
+                <select class="ml-drop" id="n8">
+                  <option value="n8-op1">50ml</option>
+                  <option value="n8-op2">125ml</option>
+                </select>
+                <div class="price">42,000원</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="best-seller">
+        <div class="bs-title">
+          <hr>
+          <h3>베스트셀러</h3>
+        </div>
+
+        <div class="bs-items">
+
+          <div class="bs-item">
+            <div class="bs-img">
+              <img src="images/banner/bs-banner.png">
+            </div>
+          </div>
+
+          <div class="bs-item">
+            <div class="bs1">
+              <div class="bs1-imgbox"><img class="bs1-img" src="images/best-seller/bs1-175.jpg"></div>
+              <div class="text">
+                <p class="ko-name"><b>울트라 훼이셜 크림 홀리데이 에디션 2021</b></p>
+                <p class="en-name">2021 홀리데이 리미티드 에디션</p>
+              </div>
+              <div class="like">
+                <div class="heart-ratings">
+                  <div class="fill-ratings" style="width: 100%;">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                  <div class="empty-ratings">
+                    <span>
+                      ♥♥♥♥♥
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-in">
+                <div class="ml">
+                  <select class="ml-drop" id="bs1">
+                    <option value="bs1-op1">50ml</option>
+                    <option value="bs1-op2" selected>175ml</option>
+                  </select>
+                </div>
+                <div class="price">95,000원</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bs-item">
+            <div class="bs2">
+              <div class="bs2-img"><img src="images/best-seller/bs2-500.jpg"></div>
+              <div class="textbox">
+                <div class="text">
+                  <p class="ko-name"><b>칼렌듈라 허벌 엑스트렉트 토너</b></p>
+                  <p class="en-name">칼렌듈라 꽃잎 토너<br>Calendula Herbal Extract Toner</p>
+                </div>
+                <div class="like">
+                  <div class="heart-ratings">
+                    <div class="fill-ratings" style="width: 80%;">
+                      <span>
+                        ♥♥♥♥♥
+                      </span>
+                    </div>
+                    <div class="empty-ratings">
+                      <span>
+                        ♥♥♥♥♥
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-in">
+                  <div class="price">102,000원</div>
+                </div>
+              </div>
+            </div>
+            <div class="bs3">
+              <div class="bs3-img"><img src="images/best-seller/bs3-100.jpg"></div>
+              <div class="textbox">
+                <div class="text">
+                  <p class="ko-name"><b>클리어리 코렉티브 다크 스팟 솔루션</b></p>
+                  <p class="en-name">키엘 투명 에센스<br>Clearly Corrective™ Dark Spot Solution</p>
+                </div>
+                <div class="like">
+                  <div class="heart-ratings">
+                    <div class="fill-ratings" style="width: 70%;">
+                      <span>
+                        ♥♥♥♥♥
+                      </span>
+                    </div>
+                    <div class="empty-ratings">
+                      <span>
+                        ♥♥♥♥♥
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-in">
+                  <div class="price">86,000원</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="footer">
+
+    <div class="brand">
+
+      <img class="logo-white" src="images/logo/logo_white.png">
+      <span>FINEST APOTHECARY SKINCARE</span>
+      <img class="statement" src="images/logo/statement-icon.png">
+      <span>자연성분 • 피부과학 • 맞춤서비스</span>
+
+    </div>
+
+    <div class="btm-menu">
+
+      <div class="btm-menu1">
+        <div class="btm-1">
+          <img class="btm-1-img" src="images/btm-menu/btm-1.png">
+        </div>
+        <div class="btm-1-text">스킨 케어</div>
+      </div>
+
+      <div class="btm-menu2">
+        <div class="btm-2">
+          <img class="btm-2-img" src="images/btm-menu/btm-2.png">
+        </div>
+        <div class="btm-2-text">맨 케어</div>
+      </div>
+
+      <div class="btm-menu3">
+        <div class="btm-3">
+          <img class="btm-3-img" src="images/btm-menu/btm-3.png">
+        </div>
+        <div class="btm-3-text">헤어 케어</div>
+      </div>
+
+      <div class="btm-menu4">
+        <div class="btm-4">
+          <img class="btm-4-img" src="images/btm-menu/btm-4.png">
+        </div>
+        <div class="btm-4-text">바디&베이비</div>
+      </div>
+
+    </div>
+
+    <div class="footer-under">
+
+      <div class="ft-inner">
+
+        <div class="ft-left">
+
+          <div class="policy">
+            <span>ⓒ2021 KIEHL'S SINCE 1851.</span>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">이용약관</a>
+            <a href="#">쿠키정책</a>
+            <a href="#">고객케어센터</a>
+            <a href="#">글로벌 사이트</a>
+          </div>
+
+          <div class="info">
+            <img class="logo-o" src="images/logo/footer_badge.png">
+            <span>사업자명:엘오케이(유) │ 대표:크리스티앙 마르코스 아르나이</span><br>
+            <span>사업자 등록번호:220-81-73483 │ 통신판매업 신고:2012-서울강남-01663</span>
+            <a href="#">사업자 정보 확인</a><br>
+            <span>주소:서울특별시 강남구 영동대로 517 아셈타워 31층</span><br>
+            <span>개인정보 보호 책임자:이정민 │ 고객 케어 센터:구매,배송,사이트 이용 문의 080-822-3322</span>
+            <span>제품 문의:080-022-3322</span>
+          </div>
+
+        </div>
+
+        <div class="ft-right">
+
+          <div class="sns">
+            <div class="facebook">
+              <a href="#"><i class="xi-facebook-official"></i></a>
+              <h5>페이스북</h5>
+            </div>
+            <div class="insta">
+              <a href="#"><i class="xi-instagram"></i></a>
+              <h5>인스타그램</h5>
+            </div>
+          </div>
+
+          <div class="lottelecs_info">
+            <p>
+              퍼스트데이터코리아(유) 구매안전(에스크로)서비스가맹점<br>
+              고객님은 안전한 전자상거래를 위해 저희 쇼핑몰에서 가입한<br>
+              퍼스트데이터코리아(유)의 구매안전 서비스를 이용할 수 있습니다.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
